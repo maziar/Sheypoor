@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FirstViewController">
+            <connections>
+                <outlet property="scrollView" destination="D1t-rC-w4R" id="Zlk-ep-V66"/>
+                <outlet property="tabbar" destination="3HM-Rr-Eje" id="GuU-1e-Co7"/>
+                <outlet property="tabbarHeader" destination="fld-Pf-Wca" id="dQU-Wd-gfd"/>
+                <outlet property="tabbarItem1" destination="QGr-MQ-chc" id="ELg-9r-5Z2"/>
+                <outlet property="tabbarItem2" destination="Zgh-pV-zfR" id="8fA-Wu-thI"/>
+                <outlet property="tabbarItem3" destination="ZaG-r9-1F5" id="axD-N8-wea"/>
+                <outlet property="tabbarItem4" destination="JJc-Rb-eKP" id="hnn-iW-8jd"/>
+                <outlet property="tabbarItem5" destination="Ves-if-vk6" id="pAO-Xo-Gsa"/>
+                <outlet property="tabbarItemAction" destination="5e5-0j-V25" id="z6D-gd-3tS"/>
+                <outlet property="tabbarItemAdventure" destination="KpT-Ln-zGD" id="wJn-Wg-Igc"/>
+                <outlet property="tabbarItemAnimation" destination="KFk-Jb-tt7" id="i6K-yV-udH"/>
+                <outlet property="tabbarItemBiogrphy" destination="Gjr-86-Yhu" id="mv7-bw-GyW"/>
+                <outlet property="tabbarItemDrama" destination="6p1-M4-WWL" id="rCp-2l-T7f"/>
+                <outlet property="tableView" destination="Hgc-Zy-afr" id="jkq-DO-Fb4"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tabBar contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3HM-Rr-Eje">
+                    <rect key="frame" x="0.0" y="618" width="375" height="49"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <items>
+                        <tabBarItem id="Ves-if-vk6"/>
+                        <tabBarItem id="JJc-Rb-eKP"/>
+                        <tabBarItem title="" id="ZaG-r9-1F5"/>
+                        <tabBarItem title="" id="Zgh-pV-zfR"/>
+                        <tabBarItem title="" id="QGr-MQ-chc"/>
+                    </items>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                            <color key="value" red="1" green="0.80392156862745101" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </tabBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Hgc-Zy-afr">
+                    <rect key="frame" x="0.0" y="93" width="375" height="525"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="E8P-1L-hWo"/>
+                        <outlet property="delegate" destination="-1" id="kCZ-tR-vYc"/>
+                    </connections>
+                </tableView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D1t-rC-w4R">
+                    <rect key="frame" x="0.0" y="43" width="429" height="58"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                    <subviews>
+                        <tabBar contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fld-Pf-Wca">
+                            <rect key="frame" x="0.0" y="0.0" width="429" height="49"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.2196078431372549" alpha="0.0" colorSpace="calibratedRGB"/>
+                            <items>
+                                <tabBarItem title="ACTIONS" id="5e5-0j-V25">
+                                    <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-8"/>
+                                </tabBarItem>
+                                <tabBarItem title="ANIMATIONS" id="KFk-Jb-tt7">
+                                    <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-8"/>
+                                </tabBarItem>
+                                <tabBarItem title="BIOGRAPHY" id="Gjr-86-Yhu">
+                                    <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-8"/>
+                                </tabBarItem>
+                                <tabBarItem title="DRAMA" id="6p1-M4-WWL">
+                                    <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-8"/>
+                                </tabBarItem>
+                                <tabBarItem title="ADVENTURE" id="KpT-Ln-zGD">
+                                    <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-8"/>
+                                </tabBarItem>
+                            </items>
+                            <color key="tintColor" red="1" green="0.80392156859999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <color key="selectedImageTintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="2W0-f1-i8Q"/>
+                            </connections>
+                        </tabBar>
+                    </subviews>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="q5B-6N-kDk"/>
+                    </connections>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <point key="canvasLocation" x="26.5" y="52.5"/>
+        </view>
+    </objects>
+</document>
